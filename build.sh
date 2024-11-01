@@ -13,11 +13,23 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-rpm-ostree install screen
+rpm-ostree install \
+    screen \
+    xournal \
+    emacs \
+    emacs-goodies \
+    emacs-slime \
+    
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
+# install Kando-menu from github
+install kando() {
+cd /tmp/kando
+curl -L https://github.com/kando-menu/kando/releases/download/v1.4.0/kando-1.4.0-1.x86_64.rpm -o kando-1.4.0-1.x86_64.rpm 
+rpm-ostree install kando-1.4.0-1.x86_64.rpm
+}
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
