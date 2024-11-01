@@ -25,11 +25,11 @@ rpm-ostree install \
 # rpm-ostree install vlc
 
 # install Kando-menu from github
-install kando() {
-cd /tmp/kando
-curl -L https://github.com/kando-menu/kando/releases/download/v1.4.0/kando-1.4.0-1.x86_64.rpm -o kando-1.4.0-1.x86_64.rpm 
-rpm-ostree install kando-1.4.0-1.x86_64.rpm
-}
+# install kando() {
+# cd /tmp/kando
+# curl -L https://github.com/kando-menu/kando/releases/download/v1.4.0/kando-1.4.0-1.x86_64.rpm -o kando-1.4.0-1.x86_64.rpm 
+# rpm-ostree install kando-1.4.0-1.x86_64.rpm
+# }
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
