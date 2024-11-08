@@ -15,10 +15,6 @@ RELEASE="$(rpm -E %fedora)"
 # this installs a package from fedora repos
 rpm-ostree install \
     screen \
-    xournal \
-    emacs \
-    emacs-goodies \
-    emacs-slime \
     
 
 # this would install a package from rpmfusion
