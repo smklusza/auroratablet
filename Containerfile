@@ -33,10 +33,10 @@ ARG SOURCE_IMAGE="aurora"
 # - stable-zfs
 # - stable-nvidia-zfs
 # - (and the above with testing rather than stable)
-ARG SOURCE_SUFFIX="-dx-surface"
+ARG SOURCE_SUFFIX="-dx-hwe"
 
 ## SOURCE_TAG arg must be a version built for the specific image: eg, 39, 40, gts, latest
-ARG SOURCE_TAG="40"
+ARG SOURCE_TAG="stable"
 
 
 ### 2. SOURCE IMAGE
